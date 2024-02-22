@@ -16,7 +16,11 @@ void ProductChanger::SetImGuiContext(uintptr_t ctx)
 //  f2 -> plugins -> ProductChanger
 void ProductChanger::RenderSettings()
 {
-	ImGui::Checkbox("Enable Plugin", &EnablePlugin);
+	ImGui::Checkbox("Remove Goal Explosion For Local Player", &RemoveGoalExplosionForLocalPlayer);
+	ImGui::Checkbox("Default Engine For Local Player", &DefaultEngineForLocalPlayer);
+	ImGui::NewLine();
+	ImGui::Checkbox("Remove Goal Explosion For Other Players", &RemoveGoalExplosionForOtherPlayers);
+	ImGui::Checkbox("Default Engine For Other Players", &DefaultEngineForOtherPlayers);
 }
 
 /*

@@ -43,7 +43,10 @@ struct UEngineAudioREVComponent_TA_execInitFromAsset_Params
 
 class ProductChanger: public BakkesMod::Plugin::BakkesModPlugin, public BakkesMod::Plugin::PluginSettingsWindow/*, public BakkesMod::Plugin::PluginWindow*/
 {
-	bool EnablePlugin = true;
+	bool RemoveGoalExplosionForLocalPlayer = false;
+	bool DefaultEngineForLocalPlayer = false;
+	bool RemoveGoalExplosionForOtherPlayers = true;
+	bool DefaultEngineForOtherPlayers = true;
 
 	bool ShouldRemoveGoalExplosion = false;
 
